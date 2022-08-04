@@ -41,9 +41,9 @@ module.exports = {
 
                 console.log("Logged deleted message") ;
 
-            } catch {
+            } catch(error) {
 
-                console.error("Failed to log a deleted message") ;
+                console.error("Failed to log a deleted message:\n" + error.stack) ;
 
             }
         
@@ -51,4 +51,4 @@ module.exports = {
 
     },
 
-}  
+} ;

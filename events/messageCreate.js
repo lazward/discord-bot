@@ -13,7 +13,15 @@ module.exports = {
         
         } else if (content.includes("goodbot")) {
 
-            message.react('328583701321744396');
+            try {
+
+                message.react('328583701321744396');
+
+            } catch (error) {
+
+                console.error('couldnt thank:\n' + error.stack) ;
+
+            }
 
         }
 

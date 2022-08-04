@@ -17,7 +17,7 @@ module.exports = {
     
         } catch (error) {
     
-            console.error(error) ;
+            console.error("Error running command:\n" + error.stack) ;
             interaction.reply({content: 'Error running command', ephemeral: true}) ;
     
         }
