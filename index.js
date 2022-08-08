@@ -4,7 +4,7 @@ const {Client, Collection, IntentsBitField} = require('discord.js') ;
 const {token} = require('./config.json') ;
 
 const intents = new IntentsBitField() ;
-intents.add(IntentsBitField.Flags.Guilds, IntentsBitField.Flags.GuildMessages, IntentsBitField.Flags.MessageContent) ;
+intents.add(IntentsBitField.Flags.Guilds, IntentsBitField.Flags.GuildMessages, IntentsBitField.Flags.MessageContent, IntentsBitField.Flags.GuildVoiceStates) ;
 
 const client = new Client({intents: intents}) ;
 
